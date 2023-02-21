@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+            <link rel="stylesheet" href="mystyle3.css">
+        
+            <title>VTU Calculator</title>
+
+            <script src="script5.js"></script>
+        
+        </head>
+        <body>
+            <nav class="navbar">
+                <h1>VTU Calculator</h1>
+                <div class="tabs">
+                  <input id="tab-1" type="radio" name="group" />
+                  <input id="tab-2" type="radio" name="group" />
+                  <input id="tab-3" type="radio" name="group" />
+                  <input id="tab-4" type="radio" name="group" />
+          
+                  <div class="buttons">
+                    <label class="material-symbols-outlined" for="tab-1"> home </label>
+                    <label class="material-symbols-outlined" for="tab-2"> notifications </label>
+                    <label class="material-symbols-outlined" for="tab-3">
+                      favorite
+                    </label>
+                    <label class="material-symbols-outlined" for="tab-4">
+                      settings
+                    </label>
+                    <div class="underline"></div>
+                  </div>
+              </nav>
+
+            <h1>Calculate your CGPA and Percentage</h1>
+            <h3>Calculate your CGPA and Percentage</h3>
+
+            <h4>4TH SEMESTER</h3>
+            <h5>Enter the details correctly :-</h5>
+                <form >
+                    <label class="sub" >18MAT41 :</label>
+                    <input type="number" id="s1" name="18MAT41" min="0" max="100" placeholder="Total marks"><br><br>
+                    <label class="sub" >18xx42 :</label>
+                    <input type="number" id="s2" name="18xx42" min="0" max="100" placeholder="Total marks"><br><br>
+                    <label class="sub">18xx43 :</label>
+                    <input type="number" id="s3" name="18xx43" min="0" max="100" placeholder="Total marks"><br><br>
+                    <label class="sub">18xx44 :</label>
+                    <input type="number" id="s4" name="18xx44" min="0" max="100" placeholder="Total marks"><br><br>
+                    <label class="sub">18xx45 :</label>
+                    <input type="number" id="s5" name="18xx45" min="0" max="100" placeholder="Total marks"><br><br>
+                    <label class="sub">18xx46:</label>
+                    <input type="number" id="s6" name="18xx46" min="0" max="100" placeholder="Total marks"><br><br>
+                    <label class="sub">18xxL47:</label>
+                    <input type="number" id="s7" name="18xxL47" min="0" max="100" placeholder="Total marks"><br><br>
+                    <label class="sub">18xxL48 :</label>
+                    <input type="number" id="s8" name="18xxL48" min="0" max="100" placeholder="Total marks"><br><br>
+                    <label class="sub">18xxx49 :</label>
+                    <input type="number" id="s9" name="18xxx49" min="0" max="100" placeholder="Total marks"><br><br>
+                    <button onclick="Calculate()" class="button" role="button">Calculate</button>
+                </form>
+                    
+        </body>
+    </html>
