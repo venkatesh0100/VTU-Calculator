@@ -1,139 +1,138 @@
+
 * {
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --color-primary: #2ebdff;
-  }
-  
-  html,
-  body,
-  .wrapper {
-    height: 100%;
-  }
-  
-  body {
-    margin: 0;
-    font-family: "Euclid Circular A";
-    background: #f9f9f9;
-    color: #f9f9f9;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  background: #3b3d43;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+  background: #19191c;
+  color: #f9f9f9;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
   .navbar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 72px;
-    background: #17181a;
-    width: 100%;
+    padding: 0 0 0 16px;
   }
-  
-  .navbar h1 {
-    display: none;
-    flex: 2 1 auto;
-    font-weight: 500;
-    font-size: 16px;
-    margin: 0 0 0 16px;
-  }
-  
-  @media (width >= 440px) {
-    .navbar {
-      top: 0;
-      bottom: auto;
-    }
-  
-    .tabs {
-      scale: 0.8;
-      width: 200px;
-    }
-  
-    .navbar h1 {
-      display: block;
-    }
-  }
-  
-  .tabs {
-    flex: 1 1 auto;
-  }
-  
-  .tabs > input {
+}
+
+.navbar-overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-overlay {
     display: none;
   }
-  
-  h2 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    font-weight: 400;
+}
+
+.navbar-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-burger {
+    display: none;
   }
-  
-  label {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
-    font-size: 15px;
-    flex: 1 1 auto;
-    min-width: 58px;
-    opacity: 0.35;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.3s;
-  }
-  
-  .buttons {
-    position: relative;
-    display: flex;
-  }
-  
-  .underline {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    bottom: -3px;
-    width: 25%;
-    display: grid;
-    place-items: center;
-    transition: 0.3s;
-  }
-  
-  .underline::after {
-    content: "";
-    display: block;
-    translate: 0 -15px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--color-primary);
-  }
-  
-  .tabs input:nth-child(1):checked ~ .buttons .underline {
+}
+
+.navbar-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.navbar-menu {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  translate: -100% 0;
+  width: 270px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #000000;
+  visibility: hidden;
+  transition: translate 0.3s;
+}
+
+body.open .navbar-menu {
+  translate: 0 0;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-menu {
+    position: static;
     translate: 0 0;
+    width: auto;
+    background: transparent;
+    flex-direction: row;
+    visibility: visible;
   }
-  
-  .tabs input:nth-child(2):checked ~ .buttons .underline {
-    translate: 100% 0;
-  }
-  
-  .tabs input:nth-child(3):checked ~ .buttons .underline {
-    translate: 200% 0;
-  }
-  
-  .tabs input:nth-child(4):checked ~ .buttons .underline {
-    translate: 300% 0;
-  }
-  
-  .tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
-  .tabs input:nth-child(2):checked ~ .buttons label:nth-child(2),
-  .tabs input:nth-child(3):checked ~ .buttons label:nth-child(3),
-  .tabs input:nth-child(4):checked ~ .buttons label:nth-child(4) {
-    opacity: 1;
-    color: black;
-  }
+}
+
+.navbar-menu > button {
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding: 0 8px;
+}
+
+.navbar-menu > button.active {
+  color: inherit;
+}
+
+
 body {
 
-    background-color: lightblue;
+  background: linear-gradient(45deg, #fdc372 0%, #69a9fc 100%)
 }
 .main {
     font-size: larger;

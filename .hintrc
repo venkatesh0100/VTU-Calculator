@@ -23,15 +23,28 @@
       {
         "ignore": [
           "scale",
-          "translate"
+          "translate",
+          "overscroll-behavior",
+          "-webkit-overflow-scrolling",
+          "scroll-behavior",
+          "rotate",
+          "box-align"
         ]
       }
     ],
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
+        "link-name": "off",
+        "button-name": "off"
       }
-    ]
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }

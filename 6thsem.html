@@ -13,26 +13,25 @@
         
         </head>
         <body>
+          <section>
+
             <nav class="navbar">
-                <h1>VTU Calculator</h1>
-                <div class="tabs">
-                  <input id="tab-1" type="radio" name="group" />
-                  <input id="tab-2" type="radio" name="group" />
-                  <input id="tab-3" type="radio" name="group" />
-                  <input id="tab-4" type="radio" name="group" />
-          
-                  <div class="buttons">
-                    <label class="material-symbols-outlined" for="tab-1"> home </label>
-                    <label class="material-symbols-outlined" for="tab-2"> notifications </label>
-                    <label class="material-symbols-outlined" for="tab-3">
-                      favorite
-                    </label>
-                    <label class="material-symbols-outlined" for="tab-4">
-                      settings
-                    </label>
-                    <div class="underline"></div>
-                  </div>
+              <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        
+              <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+                <span class="material-icons">menu</span>
+              </button>
+              <h1 class="navbar-title">VTU Calculator</h1>
+              <nav class="navbar-menu">
+                <button type="button" onclick = "window.location.href='index.html';">Home</button>
+                <button type="button" class="active" onclick = "window.location.href='about.html';">About</button>
+                <button type="button" onclick = "window.location.href='contact us.html';">Contact Us</button>
               </nav>
+            </nav>
+            <script>
+              const toggleMenuOpen = () => document.body.classList.toggle("open");
+            </script>
+            </section>
 
             <h3>Calculate your CGPA and Percentage</h3>
             <br><br><br><br>
@@ -68,15 +67,15 @@
                        <div class="footer-col">
                          <h4>company</h4>
                          <ul>
-                           <li><a href="#">about us</a></li>
-                           <li><a href="#">our services</a></li>
-                           <li><a href="#">privacy policy</a></li>
+                           <li><a href="about.html">about us</a></li>
+                           <li><a href="about.html">our services</a></li>
+                           <li><a href="error.html">privacy policy</a></li>
                          </ul>
                        </div>
                        <div class="footer-col">
                          <h4>get help</h4>
                          <ul>
-                           <li><a href="#">FAQ</a></li>
+                           <li><a href="error.html">FAQ</a></li>
                            
                
                          </ul>
@@ -85,16 +84,16 @@
                        <div class="footer-col">
                          <h4>follow us</h4>
                          <div class="social-links">
-                           <a href="#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="#"><i class="fab fa-twitter"></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
-                           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                           <a href="error.html"><i class="fab fa-facebook-f"></i></a>
+                           <a href="error.html"><i class="fab fa-twitter"></i></a>
+                           <a href="error.html"><i class="fab fa-instagram"></i></a>
+                           <a href="error.html"><i class="fab fa-linkedin-in"></i></a>
                          </div>
                        </div>
                      </div>
                    </div>
                  </footer>
                </section>
-                    
-        </body>
-    </html>
+                  
+            </body>
+            </html>

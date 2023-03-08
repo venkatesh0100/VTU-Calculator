@@ -1,97 +1,162 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VTU Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+</head>
+<body>
 
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>VTU Calculator</title>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-            <link rel="stylesheet" href="mystyle.css">
-            <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-          
-    </head>
-    <body>
-      <section>
+  <section>
 
-        <nav class="navbar">
-            <h1>VTU Calculator</h1>
-            <div class="tabs">
-              <input id="tab-1" type="radio" name="group" />
-              <input id="tab-2" type="radio" name="group" />
-              <input id="tab-3" type="radio" name="group" />
-              <input id="tab-4" type="radio" name="group" />
-      
-              <div class="buttons">
-                <label class="material-symbols-outlined" for="tab-1"> home </label>
-                <label class="material-symbols-outlined" for="tab-2"> notifications </label>
-                <label class="material-symbols-outlined" for="tab-3">
-                  favorite
-                </label>
-                <label class="material-symbols-outlined" for="tab-4">
-                  settings
-                </label>
-                <div class="underline"></div>
-              </div>
-          </nav>
-        </section>
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
 
-        <section>
-        <div class="main">
-          
-            <h2>VTU Calculator</h2>
-            <br><br><br><br>
-            <h4>Select the Scheme Correctly :-</h4><br>
-            <a href="index18.html" class="button" role="button">2018 Scheme</a><br><br>
-            <a href="index17.html" class="button" role="button">2017 Scheme</a><br><br>
-            <a href="index21.html" class="button" role="button">2021 Scheme</a><br><br>
-         </div>
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title">VTU Calculator</h1>
+      <nav class="navbar-menu">
+        <button type="button" onclick = "window.location.href='index.html';">Home</button>
+        <button type="button" class="active" onclick = "window.location.href='about.html';">About</button>
+        <button type="button" onclick = "window.location.href='contact us.html';">Contact Us</button>
+      </nav>
+    </nav>
+    <script>
+      const toggleMenuOpen = () => document.body.classList.toggle("open");
+    </script>
+    </section>
 
-        </section>
 
-        <section>
-         <div>
+
+    <section>
+      <div class="main">
+        
+          <h2>VTU Calculator</h2>
           <br><br><br><br>
-         </div>
-         <footer class="footer">
-          <div class="container">
-            <div class="row">
-              <div class="footer-col">
-                <h4>company</h4>
-                <ul>
-                  <li><a href="#">about us</a></li>
-                  <li><a href="#">our services</a></li>
-                  <li><a href="#">privacy policy</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h4>get help</h4>
-                <ul>
-                  <li><a href="#">FAQ</a></li>
-                  
-      
-                </ul>
-              </div>
-              
-              <div class="footer-col">
-                <h4>follow us</h4>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+          <h2>"Welcome to our website. We're glad you're here. Take a deep breath, and let's begin to explore all the possibilities that lie ahead."</h2><br>
+       </div>
+
       </section>
 
+    <section>
+    <div class="carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <div class="carousel-item item-1">
+          <!-- <h2>Item 1</h2>...-->
+          
+          <a class="arrow arrow-prev" href="#item-3"></a>
+          <a class="arrow arrow-next" href="#item-2"></a>
+        </div>
+        
+        <div class="carousel-item item-2">
+          <!-- <h2>Item 2</h2>...-->
+          
+          <a class="arrow arrow-prev" href="#item-1"></a>
+          <a class="arrow arrow-next" href="#item-3"></a>
+        </div>
+        
+        <div class="carousel-item item-3">
+          <!-- <h2>Item 3</h2>...-->
+          
+          <a class="arrow arrow-prev" href="#item-2"></a>
+          <a class="arrow arrow-next" href="#item-1"></a>
+        </div>
+      </div>
+    </section>
+
+    <br><br><br>
+
+  <section>
+    <div class="cont">
+      <p class="white-strip-paragraph"><br><br><br>
+        "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle." - Christian D. Larson
+        <br><br>
+        "Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill
+        <br><br>
+        "Your only limit is the amount of willingness you have to take action." - Tony Robbins
+        <br><br>
+        "Don't wait for opportunity. Create it." - George Bernard Shaw
+        <br><br>
+        "The only way to do great work is to love what you do." - Steve Jobs<br><br><br></p>
+        
+    </div>
+  </section>
+  <br><br><br>
+<section>
+<h5>To Calculate Your SGPA And Percentage </h5><br>
+<a href="index1.html" class="button" role="button">Click Here</a><br><br>
+<h5>To Calculate Your CGPA And Percentage </h5><br>
+<a href="index.html" class="button" role="button">Click Here</a><br><br>
+
+</section>
 
 
-    </body>
+<section>
+  <div class="cont">
+    <p class="white-strip-paragraph"><br><br><br>
+      "The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt<br><br>
+
+"If you can dream it, you can achieve it." - Zig Ziglar<br><br>
+
+"You are never too old to set another goal or to dream a new dream." - C.S. Lewis<br><br>
+
+"Success is not measured by what you accomplish, but by the opposition you have encountered, and the courage with which you have maintained the struggle against overwhelming odds." - Orison Swett Marden<br><br><br></p>
+      
+  </div>
+</section>
+<br><br>
+
+<h2>"Let us be grateful to the people who make us happy; they are the charming gardeners who make our souls blossom."</h2><br>
+
+<br><br>
+
+    <section>
+      <div>
+       <br><br><br><br>
+      </div>
+      <footer class="footer">
+       <div class="container">
+         <div class="row">
+           <div class="footer-col">
+             <h4>company</h4>
+             <ul>
+               <li><a href="about.html">about us</a></li>
+               <li><a href="about.html">our services</a></li>
+               <li><a href="error.html">privacy policy</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>get help</h4>
+             <ul>
+               <li><a href="error.html">FAQ</a></li>
+               
+   
+             </ul>
+           </div>
+           
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="error.html"><i class="fab fa-facebook-f"></i></a>
+               <a href="error.html"><i class="fab fa-twitter"></i></a>
+               <a href="error.html"><i class="fab fa-instagram"></i></a>
+               <a href="error.html"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </footer>
+   </section>
+      
+</body>
 </html>
